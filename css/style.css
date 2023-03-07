@@ -160,3 +160,24 @@ h1{
 .opacity{
     filter: brightness(75%);
 }
+
+
+
+/* piccola barra di navigazione */
+ul.smallnav{
+ list-style-type: none;
+ margin: 0px;
+ padding: 10px;
+ background-color: var(--sec);
+ width: 40px;
+ position: absolute;
+ top: 600px;
+
+}
+
+
+
+a{
+    color: white;
+}
+
