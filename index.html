@@ -1,135 +1,194 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Italia.it</title>
-    
-    <!-- Boostrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
-    <!-- Fonts Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- My Style -->
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Italia.it</title>
+  
+  <!-- Boostrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+   <!-- Font Awnsome -->
+
+   <script src="https://kit.fontawesome.com/0723cff916.js" crossorigin="anonymous"></script>
+
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- My Style -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+  
+  <nav class="navbar navbar-expand-lg">
     
-    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex">
+      
+      <a class="navbar-brand" href="#"><img src="./media/logoitalia-1.jpg" class="logo" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
-        <div class="container-fluid d-flex">
+        <!-- First group -->
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          
+          <li class="nav-item">
             
-            <a class="navbar-brand" href="#"><img src="./media/logoitalia-1.jpg" class="logo" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="nav-link" href="#"> <strong><h6>Home</h6></strong> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong><h6>Dove Andare</h6></strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong><h6>Cosa fare</h6></strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong><h6>Informazioni</h6></strong></a>
+          </li>
+          
+          
+          
+          
+        </ul>
+        <!-- Second Group -->
+        
+        
+        
+        <div class="nav-sec d-flex">
+          <div class="linkgr2">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>Cerca</a>
+          </div>
+          
+          <div class="linkgr2">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg>Preferiti</a>
+          </div>
+          
+          <div class="linkgr2">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+            </svg>Accedi</a>
+          </div>
+          
+          
+          <div class="lingua">
             
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-                <!-- First group -->
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="#"> <strong><h6>Home</h6></strong> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><strong><h6>Dove Andare</h6></strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><strong><h6>Cosa fare</h6></strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><strong><h6>Informazioni</h6></strong></a>
-                    </li>
-
-
-                  
-                  
-            </ul>
-            <!-- Second Group -->
-                    
-                    
-                    
-            <div class="nav-sec d-flex">
-                <div class="linkgr2">
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>Cerca</a>
+            <div class="dropdown">
+              <!-- <button class="btn-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                <div>
+                  <a href=""><img src="./media/Bandiera-Italia-extra-big-33-977.jpg" width="20px" alt=""></a>
                 </div>
-
-                <div class="linkgr2">
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                  </svg>Preferiti</a>
+                <div class="it">
+                  <a href=""> it </a>
+                  <button class="btn-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                 </div>
-
-                <div class="linkgr2">
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                  </svg>Accedi</a>
-                </div>
-
-
-                <div class="lingua">
-
-                <div class="dropdown">
-                    <button class="btn-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div>
-                            <a href=""><img src="./media/Bandiera-Italia-extra-big-33-977.jpg" width="20px" alt=""></a>
-                        </div>
-                        <div class="it">
-                            <a href=""> it</a>
-                        </div>
-                    </button>
-
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"><img src="./media/kisspng-flag-of-england-flag-of-the-united-kingdom-symbol-english-flag-5b364b72cc80f8.1333346315302849148377.jpg"width="20px" alt=""> English</a></li>
-                      <li><a class="dropdown-item" href="#"><img src="./media/spain-2.png" width="20px" alt=""> Espanol</a></li>
-                      <li><a class="dropdown-item" href="#"><img src="/media/bandiera-germania_55613.jpg" width="20px" alt=""> Deutsch</a></li>
-                      <li><a class="dropdown-item" href="#"><img src="./media/Bandiera-Italia-extra-big-33-977.jpg" width="20px" alt=""> Italiano</a></li>
-                    </ul>
-                  </div>
-
-
-</div>
-
-
-
-
-
-
-                <!-- <div class="lingua">
-                    <div>
-                        <a href=""><img src="./media/Bandiera-Italia-extra-big-33-977.jpg" width="20px" alt=""></a>
-                    </div>
-                    <div class="it">
-                        <a href=""> it</a>
-                    </div>
-               
-                
-                </div> -->
+              </button>
+              
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img src="./media/kisspng-flag-of-england-flag-of-the-united-kingdom-symbol-english-flag-5b364b72cc80f8.1333346315302849148377.jpg"width="20px" alt=""> English</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./media/spain-2.png" width="20px" alt=""> Espanol</a></li>
+                <li><a class="dropdown-item" href="#"><img src="/media/bandiera-germania_55613.jpg" width="20px" alt=""> Deutsch</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./media/Bandiera-Italia-extra-big-33-977.jpg" width="20px" alt=""> Italiano</a></li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </nav>
+  
+  <!-- Sezione Principale -->
+  
+  
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+
+
+    <div class="carousel-inner">
+      <div class="carousel-item  active">
+        <img class="opacity" src="./media/3200x1800_festa_della_donna_2023_homepage.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>L'8 marzo e la Festa della Donna</h1>
+          <button class="btn"><strong>Inizia a vivere italiano</strong> </button>
 
 
         </div>
-        
-        
-        
-        
+      </div>
+    <div class="carousel-item ">
+      <img class="opacity" src="./media/3200x1800_weekend_di_pasqua_senza_barriere_homepage.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Pasqua senza barriere</h1>
+        <button class="btn"><strong>Inizia a vivere italiano</strong> </button>
+      </div>
     </div>
+
+   
+
+      <div class="carousel-item ">
+        <img class="opacity" src="./media/3200x1800_guinnes_sei_nazioni_2023_homepage.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Guinnes Sei Nazioni 2003</h1>
+          <button class="btn"><strong>Inizia a vivere italiano</strong> </button>
+
+        </div>
+      </div>
+
+     
+
+      <div class="carousel-item ">
+        <img class="opacity" src="./media/3200x1800_bergamo_homepage.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Bergamo Brescia Capitale italiana della cultura 2023 </h1>
+          <button class="btn"><strong>Inizia a vivere italiano</strong> </button>
+
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon freccia" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- piccola barra di navigazione -->
+<nav class="smallnav">
+  <ul>
+    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+      <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+    </svg> <i class="bi bi-house"></i></a></li>
+    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-quote" viewBox="0 0 16 16">
+      <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+      <path d="M7.066 6.76A1.665 1.665 0 0 0 4 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+    </svg></i> </a></li>
+    <li><a href=""><i class="fa-solid fa-paw"></i></a></li>
+
+  </ul>
 </nav>
-
-
-
-
-
-
-<!-- Boostrap Java Script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  
+  
+  
+  <!-- Boostrap Java Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

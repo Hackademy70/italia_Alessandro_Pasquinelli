@@ -102,7 +102,10 @@ a:hover{
 }
 
 .it{
-    padding-top: 5px;
+    /* padding-top: 5px; */
+    display: flex;
+    align-items: center;
+
     
 }
 
@@ -117,3 +120,43 @@ a:hover{
     padding-right: 20px;
 }
 
+
+
+/* Sezione Principale */
+.carousel-inner{
+    height: 650px;
+} 
+
+.carousel-caption{
+    /* border: 5px solid red; */
+    padding: 50px;
+    margin-bottom: 200px;
+}
+h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.btn{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+}
+
+.carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0, 0.482);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-next-icon{
+    background-color: rgba(0, 0, 0, 0.482);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.opacity{
+    filter: brightness(75%);
+}
