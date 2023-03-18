@@ -1,143 +1,99 @@
-:root{
+:root {
     --font: 'Golos Text', sans-serif;
     --main: black;
     --sec: rgb(0, 60, 255);
 }
 
-*{
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
     font-family: var(--font);
 }
 
-.logo{
+/* barra di navigazione */
+
+.logo {
     width: 120px;
 
 }
 
-.navbar-collapse{
+.navbar-collapse {
     /* background-color: aqua; */
     font-size: 15px;
 
 }
-.container-fluid{
-    margin-left: 110px;
-    margin-right: 110px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
 
-@media screen and (max-width: 300px) {
-    .container-fluid{
-    margin-left: 0px;
-    margin-right: 0px;
-   
-        
-    }
-    
-}
 
-.navbar{
-    display: flex;
-    align-content: center;
-}
-.navbar-nav{
-    height: 70px;
-   display: flex;
-   align-items: center;
-   color: var(--main);
-   /* border: 5px solid red; */
-   width: 100%;
 
-}
 
-.nav-sec, .nav-sec a{
+
+
+.nav-sec,
+.nav-sec a {
     list-style-type: none;
     text-decoration: none;
     color: var(--main);
 }
-.nav-sec{
+
+.nav-sec {
     display: flex;
     font-size: 10px;
     /* border: 5px solid yellow; */
-    margin-right: 50px;
 
 }
 
 
-.nav-link{
-    color: var(--main);
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.nav-link:hover{
+.nav-link:hover {
     color: var(--sec);
     border-bottom: 2px solid var(--sec);
 }
 
-a:hover{
+a:hover {
     color: var(--sec);
 
 }
 
-.navbar-brand{
-    margin-right: 15px;
-    /* border: 5px solid red; */
-    padding: 10px;
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-}
-
-.lingua{
-    /* border: 4px solid green; */
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   border-left: 1px solid rgba(194, 205, 215, 0.66);
-   padding-left: 20px;
 
 
-}
-
-.it{
+.it {
     /* padding-top: 5px; */
     display: flex;
     align-items: center;
 
-    
+
 }
 
-.btn-1{
+.btn-1 {
     border: none;
     background-color: white;
-    
+
 }
 
-.linkgr2{
+.linkgr2 {
     padding-left: 20px;
     padding-right: 20px;
 }
 
+/* secondo gruppo barra di navigazione */
 
+.size-ico {
+    font-size: 30px;
 
-/* Sezione Principale */
-.carousel-inner{
-    height: 650px;
-} 
-
-.carousel-caption{
-    /* border: 5px solid red; */
-    padding: 50px;
-    margin-bottom: 200px;
 }
-h1{
+
+
+/* Sezione Carosello iniziale */
+
+h1 {
     font-size: 50px;
     padding-bottom: 30px;
 }
 
-.btn{
+.btn {
     padding: 10px;
     margin-bottom: 20px;
     border: 2px solid white;
@@ -145,39 +101,376 @@ h1{
     color: white;
 }
 
-.carousel-control-prev-icon{
-    background-color: rgba(0, 0, 0, 0.482);
-    border-radius: 50%;
-    padding: 10px;
-}
 
-.carousel-control-next-icon{
-    background-color: rgba(0, 0, 0, 0.482);
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.opacity{
+.opacity {
     filter: brightness(75%);
+    scale: 1;
 }
 
+@media screen and (max-width: 300px) {
+    .carousel-header {
+        max-height: 150px;
+    }
+
+    .opacity {
+        max-height: 150px;
+    }
+}
 
 
 /* piccola barra di navigazione */
-ul.smallnav{
- list-style-type: none;
- margin: 0px;
- padding: 10px;
- background-color: var(--sec);
- width: 40px;
- position: absolute;
- top: 600px;
+ul.smallnav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    background-color: var(--sec);
+    width: 40px;
+    position: fixed;
+
+    top: 550px;
+    z-index: 1;
 
 }
 
 
 
-a{
+a {
     color: white;
 }
 
+/* sezione link  */
+
+.titoli {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+/* Pagination */
+
+.page-links {
+    color: var(--main);
+
+}
+
+
+/* Sezione Articoli */
+
+.card1 {
+    /* size: 200px; */
+    padding-top: 20px;
+}
+
+.margin1 {
+    margin-top: 20px;
+}
+
+@media screen and (max-widht: 600px) {
+    .margin1 {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+.img-article {
+    transition: 2s;
+}
+
+.img-article:hover {
+    transform: scale(1.2);
+
+}
+
+.container-image {
+    overflow: hidden;
+}
+
+.size-ico-card {
+    font-size: 15px;
+    color: var(--sec);
+    border: 1px solid var(--sec);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.size-ico-card:hover {
+    color: var(--main);
+    border: 1px solid var(--main);
+}
+
+.ft-size {
+    font-size: 10px;
+}
+
+/* carousel */
+
+/* group card1 */
+.img-hidden {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bg-imag1 {
+    background-image: url(../media/Image1600x1000_donne_in-equilibrio_1.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+
+}
+
+.bg-imag2 {
+    background-image: url(../media/1600x1000_tipicita_festival_fermo_2023_3.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.bg-imag3 {
+    background-image: url(../media/20220201150514-mandorlo-in-fiore-davanti-al-tempio-di-giunone-agrigento-sicilia-shutt-KkJXhZRudW.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bg-imag4 {
+    background-image: url(../media/Sala_teatrale_Teatro_di_San_Carlo.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+
+
+/* group card2 */
+
+
+.bg-imag5 {
+    background-image: url(../media/1600x1000_MIART.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.bg-imag6 {
+    background-image: url(../media/portraits_0.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bg-imag7 {
+    background-image: url(../media/Frame_2.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bg-imag8 {
+    background-image: url(../media/1600x1000_PRETTY-YENDE.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+/* group card3 */
+
+
+.bg-imag9 {
+    background-image: url(../media/1600x1000_maratona_di_brescia_2.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bg-imag10 {
+    background-image: url(../media/1600X1000_run_rome_the_marathon.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bg-imag11 {
+    background-image: url(../media/3.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bg-imag12 {
+    background-image: url(../media/1600x1000_Romics.webp);
+    height: 300px;
+    background-size: cover;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.ft-sizes {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.size-ico-cards {
+    font-size: 15px;
+    background-color: white;
+    color: var(--sec);
+    border: 1px solid var(--sec);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.size-ico-cards:hover {
+    color: var(--main);
+    border: 1px solid var(--main);
+}
+
+
+.imag-ani {
+    transition: 2s;
+}
+
+.imag-ani:hover {
+    transform: scale(1.2);
+
+}
+
+.conta-ima {
+    overflow: hidden;
+}
+
+.test {
+    z-index: 3;
+}
+
+
+
+
+/* Articolo */
+.h-cont-ti {
+    height: 100px;
+}
+
+.bg-imag13 {
+    background-image: url(../media/1600X1000_road_to_milano_cortina_2026_hero.webp);
+    height: 300px;
+    background-size: cover;
+}
+
+.card-size {
+    width: 100%;
+}
+
+
+
+.lateralCard {
+    width: 50%;
+
+
+}
+
+.img-lateralcard {
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    transition: 2s;
+}
+
+
+.img-lateralcard:hover {
+    transform: scale(1.2);
+
+}
+
+.img-lateral {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* rimani con noi */
+.rimaniconnoi {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.text-button {
+    color: white;
+}
+
+.cone {
+    height: 500px;
+
+
+}
+
+
+
+.bg-imma {
+    background-image: url(../media/immaginefinale.webp);
+    background-size: cover;
+    width: 100%;
+}
+
+/* footer */
+
+
+.bgfooter {
+    background-color: var(--sec);
+    height: 350px;
+    width: 100%;
+}
+
+.footerimg {
+    width: 80%;
+    border-radius: 20px;
+}
+
+ul, li a {
+list-style-type: none;
+text-decoration: none;
+color: whitesmoke
+
+}
+
+
+ul, li a:hover{
+    color: aqua;
+}
+
+.navfooter{
+    color: whitesmoke;
+}
+.icofooter{
+    color: whitesmoke;
+}
