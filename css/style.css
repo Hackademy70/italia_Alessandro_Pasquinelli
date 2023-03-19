@@ -107,13 +107,13 @@ h1 {
     scale: 1;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
     .carousel-header {
-        max-height: 150px;
+        max-height: 250px;
     }
 
     .opacity {
-        max-height: 150px;
+        max-height: 250px;
     }
 }
 
@@ -167,11 +167,7 @@ a {
     margin-top: 20px;
 }
 
-@media screen and (max-widht: 600px) {
-    .margin1 {
-        margin-top: 20px;
-    }
-}
+
 
 
 
@@ -207,6 +203,12 @@ a {
 }
 
 /* carousel */
+
+.carosel{
+padding-left: 160px;
+padding-right: 160px;
+   
+}
 
 /* group card1 */
 .img-hidden {
@@ -434,7 +436,11 @@ a {
 
 }
 
-
+.bg-imma1 {
+    background-image: url(../media/1600x1000_conferma_primavera.webp);
+    background-size: cover;
+    width: 100%;
+}
 
 .bg-imma {
     background-image: url(../media/immaginefinale.webp);
@@ -447,7 +453,7 @@ a {
 
 .bgfooter {
     background-color: var(--sec);
-    height: 350px;
+    /* height: 350px; */
     width: 100%;
 }
 
@@ -455,6 +461,16 @@ a {
     width: 80%;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    
+.footerimg {
+    width: 100%;
+    border-radius: 20px;
+}
+    
+}
+
 
 ul, li a {
 list-style-type: none;

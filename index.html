@@ -93,7 +93,6 @@
 
 
 
-
   <!-- Sezione carosello iniziale -->
 
 
@@ -346,16 +345,17 @@
   <article class="titoli">
     <p class="text-secondary"><a name="cosafare"></a>DESTINAZIONI</p>
     <h2>I luoghi da non perdere</h2>
+    <div class="d-block d-md-none"><button class="bg-primary rounded-5 px-4 py-3 my-5 text-white fs-6">Scopri di piu</button></div>
 
 
     <div id="carouselExample" class="carousel slide ">
-      <div class="carousel-inner">
+      <div class="carousel-inner carosel">
         <div class="carousel-item active">
 
           <!-- group card1 -->
 
 
-          <div class="container">
+          <div class="container d-none d-md-block">
             <div class="row">
               <div class="col">
                 <div class="card conta-ima img-hidden border-0">
@@ -643,12 +643,12 @@
 
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button class="carousel-control-prev m-0 p-0" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon " aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
 
@@ -658,7 +658,8 @@
 
 
     <!-- scopri di piu -->
-    <button class="bg-primary rounded-5 px-4 py-3 my-5 text-white fs-6">Scopri di piu</button>
+    <div class="d-none d-md-block"><button class="bg-primary rounded-5 px-4 py-3 my-5 text-white fs-6">Scopri di piu</button></div>
+    
 
     <!-- Articolo -->
 
@@ -670,7 +671,7 @@
             <h2>Le fonti d'ispirazione per le tue avventure italiane</h2>
           </div>
         </div>
-        <div class="col">
+        <div class="col d-none d-md-block">
           <div class="d-flex justify-content-end  "><a class="text-secondary" href="">Vedi tutti<i
                 class="fa-solid fa-arrow-right"></i>
             </a>
@@ -684,8 +685,8 @@
 
 
     <div class="container m-5">
-      <div class="row  ">
-        <div class="col-7  p-1">
+      <div class="row ">
+        <div class="col-12 col-md-7  p-1">
 
 
 
@@ -708,7 +709,9 @@
 
           </div>
         </div>
-        <div class="col-5  p-1 ">
+
+
+        <div class="col-5 d-none d-md-block p-1 ">
 
           <div class="d-flex justify-content-between flex-column">
 
@@ -783,28 +786,116 @@
       </div>
     </div>
   </article>
-  <!-- Rimani con noi -->
-  <div class="container rimaniconnoi  px-0">
-    <div class="row ">
-      <div class="col"><img src="./media/1600x1000_conferma_primavera.webp" alt="">
-      </div>
-      <div class="col m-0 px-0 bg-imma  ">
-        <div class="d-flex flex-column cone w-100 ps-5 justify-content-center m-0 p-0">
-          <p class="text-secondary"><a name="cosafare"></a>RIMANI CON NOI</p>
-          <h2>Continua a vivere italiano</h2>
-          <p class="text-secondary">I luoghi, gli eventi e le esperienze da non perdere per vivere il lato migliore
-            dell'Italia: quello autentico.</p>
-          <label for="email">Email*</label>
-          <div class="d-flex ">
-            <input type="email" id="email" name="usermail" placeholder="your@best.mail">
-            <button type="submit" class="bg-primary rounded-5 ms-3 text-button">Invia</button>
+  
+
+
+
+
+
+<!-- Card laterali per smartphone -->
+<div class="container-fluid d-block d-md-none">
+  <div class="row ">
+    <div class="col-12">
+
+      <div class="d-flex justify-content-between flex-column">
+
+        <div class=" mb-3">
+          <div class="d-flex">
+            <div class="img-lateral">
+              <div class=" conta-ima">
+                <img src="./media/1600X1000_i_piu_famosi_monumenti_italiani_da_visitare_hero.webp"
+                  class=" img-lateralcard" alt="...">
+              </div>
+            </div>
+            <div class="col">
+              <div class="ps-2">
+                <div class="d-flex  justify-content-between"><a href=""><i
+                      class="fa-regular size-ico-cards fa-heart"></i></a>
+                  <p class=" ft-sizes bg-danger rounded text-white px-3 py-1 ">Arte e cultura</p>
+                </div>
+                <h6 class="card-title mb-3">I più famosi monumenti italiani da visitare almeno una volta nella vita
+                </h6>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class=" mb-3">
+          <div class="d-flex">
+            <div class="img-lateral">
+              <div class=" conta-ima">
+                <img src="./media/1600X1000_8_esperienze_uniche_in_italia_viaggio_di_lavoro_hero.webp"
+                  class="img-lateralcard " alt="...">
+              </div>
+            </div>
+            <div class="col">
+              <div class="ps-2">
+                <div class="d-flex  justify-content-between"><a href=""><i
+                      class="fa-regular size-ico-cards fa-heart"></i></a>
+                  <p class=" ft-sizes bg-black rounded text-white px-3 py-1 ">Business</p>
+                </div>
+                <h6 class="card-title mb-3">7 esperienze uniche da fare in Italia se sei in viaggio di lavoro</h6>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mb-3">
+          <div class="d-flex">
+            <div class="img-lateral">
+              <div class=" conta-ima">
+                <img src="./media/1600X1000_alla_scoperta_dei_teatri_piu_importanti_italia_hero.webp"
+                  class="img-lateralcard " alt="...">
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="ps-2">
+                <div class="d-flex  justify-content-between"><a href=""><i
+                      class="fa-regular size-ico-cards fa-heart"></i></a>
+                  <p class=" ft-sizes bg-danger rounded text-white px-3 py-1 ">Arte e cultura</p>
+                </div>
+                <h6 class="card-title mb-3">Alla scoperta dei teatri più importanti d’Italia, mete speciali </h6>
+                <p class="card-text "><small class="text-muted ">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</article>
+<!-- Rimani con noi -->
+<div class="container rimaniconnoi  px-0">
+<div class="row h-100 ">
+  <div class="col bg-imma1 d-none d-md-block">
+  </div>
+  <div class="col m-0 px-0 bg-imma  ">
+    <div class="d-flex flex-column cone  ps-5 justify-content-center m-0 p-0">
+      <p class="text-secondary"><a name="cosafare"></a>RIMANI CON NOI</p>
+      <h2>Continua a vivere italiano</h2>
+      <p class="text-secondary">I luoghi, gli eventi e le esperienze da non perdere per vivere il lato migliore
+        dell'Italia: quello autentico.</p>
+      <label for="email">Email*</label>
+      <div class="d-flex ">
+        <input type="email" id="email" name="usermail" placeholder="your@best.mail">
+        <button type="submit" class="bg-primary rounded-5 ms-3 text-button">Invia</button>
       </div>
     </div>
   </div>
+</div>
+</div>
 
 
+
+
+  </div>
+</div>
 
 
 
